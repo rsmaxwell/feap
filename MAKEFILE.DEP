@@ -1,0 +1,23 @@
+# IBM Developer's Workframe/2 Make File Creation run at 23:20:00 on 02/20/95
+
+# Make File Creation run in directory:
+#   C:\MY\APP94\FEAP;
+
+# Assumed INCLUDE environment variable path:
+#   C:\TOOLKT21\C\OS2H;
+#   C:\TOOLKT21\C\OS2H\VDD;
+#   C:\TOOLKT21\ASM\OS2INC;
+#   C:\IBMCPP\INCLUDE;
+#   C:\IBMCPP\IBMCLASS;
+
+
+INCLUDE000=$(INCLUDE)
+
+
+FEAP.OBJ:  FEAP.C  \
+#  {$(INCLUDE000)}stdlib.h  \
+#  {$(INCLUDE000)}stdio.h  \
+#  {$(INCLUDE000)}string.h  \
+#  {$(INCLUDE000)}stdarg.h  \
+#  {$(INCLUDE000)}math.h  \
+   MAKEFILE

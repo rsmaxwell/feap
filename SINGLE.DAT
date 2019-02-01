@@ -1,0 +1,35 @@
+FEAP * * Single element (Example problem)
+    4    1    1    2    2    4
+COORD
+    1    0  -1.0      -1.0
+    2    0   1.0      -1.0
+    3    0  -1.0       1.0
+    4    0   1.0       1.0
+
+ELEM
+    1    1    1    2    4    3    1
+
+BOUN
+    1    0    1    1
+    2    0    0    1
+
+FORC
+    3    0    0.0      -5.0
+    4    0    0.0      -5.0
+
+MATE
+    1    1            Stainless steel
+   100.      0.3       0.0       2    1    1
+
+END
+
+MACR
+TANG
+FORM
+OUTP
+SOLV
+DISP
+STRE
+END
+STOP
+

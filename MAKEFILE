@@ -1,0 +1,28 @@
+# IBM Developer's Workframe/2 Make File Creation run at 23:20:00 on 02/20/95
+
+# Make File Creation run in directory:
+#   C:\MY\APP94\FEAP;
+
+.SUFFIXES:
+
+.SUFFIXES: .c .cpp .cxx
+
+FEAP.EXE:  \
+  FEAP.OBJ \
+  MAKEFILE
+   ICC.EXE @<<
+ /B" /de /nologo"
+ /Fe"FEAP.EXE" 
+FEAP.OBJ
+<<
+
+{.}.c.obj:
+   ICC.EXE /Q /Wclscmpcndcnscnvcpydcleffenugengnrgotinilanobsordparporprorearettrdtruunduniusevft /Tx /Fl  /Ls /Le /Gh /Ti /N3 /Gm /C   .\$*.c
+
+{.}.cpp.obj:
+   ICC.EXE /Q /Wclscmpcndcnscnvcpydcleffenugengnrgotinilanobsordparporprorearettrdtruunduniusevft /Tx /Fl  /Ls /Le /Gh /Ti /N3 /Gm /C   .\$*.cpp
+
+{.}.cxx.obj:
+   ICC.EXE /Q /Wclscmpcndcnscnvcpydcleffenugengnrgotinilanobsordparporprorearettrdtruunduniusevft /Tx /Fl  /Ls /Le /Gh /Ti /N3 /Gm /C   .\$*.cxx
+
+!include MAKEFILE.DEP
