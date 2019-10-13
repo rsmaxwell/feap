@@ -1,0 +1,27 @@
+
+ feap
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000BDF8H CODE32                 CODE 32-bit
+ 0002:00000000 000000800H DATA32                 DATA 32-bit
+ 0002:00000800 000000000H CTOR_DTOR1             DATA 32-bit
+ 0002:00000800 000000000H CTOR_DTOR2             DATA 32-bit
+ 0002:00000800 000000000H CTOR_DTOR3             DATA 32-bit
+ 0002:00000800 000002CA0H CONST32                CONST 32-bit
+ 0002:000034A0 000000000H EDC1                   EDC_CLASS 32-bit
+ 0002:000034A0 000000018H EDC2                   EDC_CLASS 32-bit
+ 0002:000034B8 000000000H EDC3                   EDC_CLASS 32-bit
+ 0002:000034B8 000000000H BSS32                  BSS 32-bit
+ 0002:000034B8 000002044H c_common               BSS 32-bit
+ 0002:00005500 000008000H STACK32                STACK 32-bit
+
+ Origin   Group
+ 0002:0   DGROUP
+ 0000:0   FLAT
+
+Program entry point at 0001:0000BB50
+
+feap.obj(feap.for) :  error L2029: 'mino' : unresolved external
+feap.obj(feap.for) :  error L2029: 'elmt04' : unresolved external
+feap.obj(feap.for) :  error L2029: 'jdiags' : unresolved external
+
